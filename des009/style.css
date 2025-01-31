@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: white;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+.videos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+    gap: 20px; /* Espaçamento entre as imagens */
+    justify-content: center; /* Centraliza o grid */
+}
+
+.videos img {
+    width: 200px; /* Ajuste o tamanho das imagens */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+    transition: transform 0.2s ease-in-out;
+}
+
+.videos img:hover {
+    transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+}
